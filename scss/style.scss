@@ -46,6 +46,7 @@ nav {
 	margin-top: -50px;
 }
 #table {
+	animation: reverse;
 	border: outset 6px gray;
 	background-color: bisque;
 	padding: 10px;
@@ -75,11 +76,11 @@ footer {
 }
 @media screen and (min-width: 1870px) {
 	#image {
-		height: 620px;
+		height: 605px;
 	}
 	#table {
-		height: 620px;
-		width: 971px;
+		height: 605px;
+		width: 975px;
 	}
 	footer {
 		height: 215px;

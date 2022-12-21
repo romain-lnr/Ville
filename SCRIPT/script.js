@@ -9,15 +9,18 @@ var btnville5 = document.querySelector("#b5");
 
 //Ajoute l'événement sur le click du bouton charger
 btnville1.addEventListener("click", CommentNY);
+btnville1.addEventListener("click", $("table").animate({left: '250px'}));
 btnville2.addEventListener("click", CommentBerlin);
 btnville3.addEventListener("click", CommentMoscou);
 btnville4.addEventListener("click", CommentShangai);
 btnville5.addEventListener("click", CommentSkopje);
 
+
 //Fonction qui charge un texte en ajax
 function CommentNY() {
     httpRequest = new XMLHttpRequest();
 
+    $("table").animate({left: '250px'});
     if (!httpRequest) {
         alert('Giving up :( Cannot create an XMLHTTP instance');
         return false;
