@@ -31,7 +31,9 @@ function CommentNY() {
         .then(response => response.json())
         .then(data => {
             httpRequest.open((document.querySelector("#title").innerText = data['Ville'][0].Title) +
-                (document.querySelector("#text").innerText = data['Ville'][0].Desc));
+                (document.querySelector("#text").innerText = data['Ville'][0].Desc) +
+                (document.querySelector("#météo").innerText = data['Ville'][0].Météo) +
+                (document.querySelector("#population").innerText = data['Ville'][0].Population));
         })
     httpRequest.open(document.querySelector("#image").src = "IMG/NY.jpg");
     httpRequest.send();
@@ -51,7 +53,9 @@ function CommentBerlin() {
         .then(response => response.json())
         .then(data => {
             httpRequest.open((document.querySelector("#title").innerText = data['Ville'][1].Title) +
-                (document.querySelector("#text").innerText = data['Ville'][1].Desc));
+                (document.querySelector("#text").innerText = data['Ville'][1].Desc) +
+                (document.querySelector("#météo").innerText = data['Ville'][1].Météo) +
+                (document.querySelector("#population").innerText = data['Ville'][1].Population));
         })
     httpRequest.open(document.querySelector("#image").src = "IMG/Berlin.jpg");
     httpRequest.send();
@@ -71,7 +75,9 @@ function CommentMoscou() {
         .then(response => response.json())
         .then(data => {
             httpRequest.open((document.querySelector("#title").innerText = data['Ville'][2].Title) +
-                (document.querySelector("#text").innerText = data['Ville'][2].Desc));
+                (document.querySelector("#text").innerText = data['Ville'][2].Desc) +
+                (document.querySelector("#météo").innerText = data['Ville'][2].Météo) +
+                (document.querySelector("#population").innerText = data['Ville'][2].Population));
         })
     httpRequest.open(document.querySelector("#image").src = "IMG/Moscou.jpg");
     httpRequest.send();
@@ -91,7 +97,9 @@ function CommentShangai() {
         .then(response => response.json())
         .then(data => {
             httpRequest.open((document.querySelector("#title").innerText = data['Ville'][3].Title) +
-                (document.querySelector("#text").innerText = data['Ville'][3].Desc));
+                (document.querySelector("#text").innerText = data['Ville'][3].Desc) +
+                (document.querySelector("#météo").innerText = data['Ville'][3].Météo) +
+                (document.querySelector("#population").innerText = data['Ville'][3].Population));
         })
     httpRequest.open(document.querySelector("#image").src = "IMG/Shangai.jpg");
     httpRequest.send();
@@ -111,7 +119,9 @@ function CommentSkopje() {
         .then(response => response.json())
         .then(data => {
             httpRequest.open((document.querySelector("#title").innerText = data['Ville'][4].Title) +
-                (document.querySelector("#text").innerText = data['Ville'][4].Desc));
+                (document.querySelector("#text").innerText = data['Ville'][4].Desc) +
+                (document.querySelector("#météo").innerText = data['Ville'][4].Météo) +
+                (document.querySelector("#population").innerText = data['Ville'][4].Population));
         })
     httpRequest.open(document.querySelector("#image").src = "IMG/Skopje.jpg");
     httpRequest.send();

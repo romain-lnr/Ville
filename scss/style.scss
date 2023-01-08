@@ -57,14 +57,28 @@ nav {
 }
 p {
 	color: darkgrey;
+	line-height: 2,5;
+	font-size: 17px;
+}
+h6 {
+	color: lightcoral;
 }
 footer {
 	background-color: grey;
-	height: 180px;
+	height: 250px;
+	text-align: center;
 }
 #text_footer {
-	padding: 90px;
-	text-align: center;
+	padding: 40px;
+}
+.fade-in-text {
+	font-family: Arial;
+	font-size: 150px;
+	animation: fadeIn 5s;
+  }
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 @media screen and (max-width: 1400px) {
 	#table {
@@ -81,9 +95,6 @@ footer {
 	#table {
 		height: 605px;
 		width: 975px;
-	}
-	footer {
-		height: 215px;
 	}
 }
 @media screen and (max-width: 575px) {

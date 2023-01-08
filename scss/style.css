@@ -61,18 +61,48 @@ nav a:hover {
 
 p {
   color: darkgrey;
+  line-height: 2, 5;
+  font-size: 17px;
+}
+
+h6 {
+  color: lightcoral;
 }
 
 footer {
   background-color: grey;
-  height: 180px;
-}
-
-#text_footer {
-  padding: 90px;
+  height: 250px;
   text-align: center;
 }
 
+#text_footer {
+  padding: 40px;
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 150px;
+  -webkit-animation: fadeIn 5s;
+          animation: fadeIn 5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 1400px) {
   #table {
     margin-top: 400px;
@@ -88,9 +118,6 @@ footer {
   #table {
     height: 605px;
     width: 975px;
-  }
-  footer {
-    height: 215px;
   }
 }
 @media screen and (max-width: 575px) {
