@@ -48,8 +48,29 @@ nav a:hover {
   margin-top: -50px;
 }
 
+#image:hover {
+  -webkit-animation: fadeInImg 1s;
+          animation: fadeInImg 1s;
+}
+
+@-webkit-keyframes fadeInImg {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInImg {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #table {
-  animation: reverse;
   border: outset 6px gray;
   background-color: bisque;
   padding: 10px;
@@ -66,12 +87,16 @@ p {
 }
 
 h6 {
-  color: lightcoral;
+  font-size: 7px;
+}
+
+.fa {
+  font-size: 0.5em;
 }
 
 footer {
   background-color: grey;
-  height: 250px;
+  height: 100px;
   text-align: center;
 }
 
@@ -82,11 +107,11 @@ footer {
 .fade-in-text {
   font-family: Arial;
   font-size: 150px;
-  -webkit-animation: fadeIn 5s;
-          animation: fadeIn 5s;
+  -webkit-animation: fadeInTxt 5s;
+          animation: fadeInTxt 5s;
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeInTxt {
   0% {
     opacity: 0;
   }
@@ -95,7 +120,7 @@ footer {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadeInTxt {
   0% {
     opacity: 0;
   }

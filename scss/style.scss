@@ -1,7 +1,13 @@
+// Variables personnalisables
+$mainBackground: #ebf0f5;
+$mainColor: #ffffff;
+$navBackground: #0f131f;
+$tableBackground: bisque;
+
 body {
-	background: #ebf0f5;
+	background: $mainBackground;
 	line-height: 32px;
-	color: #ffffff;
+	color: $mainColor;
 	word-wrap: break-word !important;
 	font-family: "Open Sans", sans-serif;
 }
@@ -21,7 +27,7 @@ nav {
 		position: relative;
 		li {
 			display: inline-block;
-			background-color: #0f131f;
+			background-color: $navBackground;
 			&:hover {
 				>ul {
 					display: inherit;
@@ -45,10 +51,16 @@ nav {
 	height: 450px;
 	margin-top: -50px;
 }
+#image:hover {
+	animation: fadeInImg 1s;
+}
+@keyframes fadeInImg {
+	0% { opacity: .8; }
+	100% { opacity: 1; }
+}
 #table {
-	animation: reverse;
 	border: outset 6px gray;
-	background-color: bisque;
+	background-color: $tableBackground;
 	padding: 10px;
 	height: 450px;
 	width: 732px;
@@ -61,11 +73,14 @@ p {
 	font-size: 17px;
 }
 h6 {
-	color: lightcoral;
+	font-size: 7px;
+}
+.fa {
+	font-size: .5em;
 }
 footer {
 	background-color: grey;
-	height: 250px;
+	height: 100px;
 	text-align: center;
 }
 #text_footer {
@@ -74,9 +89,9 @@ footer {
 .fade-in-text {
 	font-family: Arial;
 	font-size: 150px;
-	animation: fadeIn 5s;
+	animation: fadeInTxt 5s;
   }
-@keyframes fadeIn {
+@keyframes fadeInTxt {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }
